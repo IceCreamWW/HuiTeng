@@ -6,3 +6,10 @@ class Notifications(models.Model):
     pub_date = models.DateTimeField('date published')
     expiration = models.DateTimeField('date outdated')
 
+
+class Certifications(models.Model):
+    name = models.CharField(max_length=20)
+    path = models.CharField(max_length=256)
+    visibility = models.BooleanField()
+
+

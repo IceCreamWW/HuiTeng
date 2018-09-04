@@ -214,8 +214,12 @@
       slidesToShow: 4,
       slidesToScroll: 4,
       dots: true,
-      arrows: true
+      arrows: true,
+      watchOverflow: true,
   });
+
+  if ($('.single-certification').length <= 4)
+    $('#certifications-row .slick-dots').hide();
 
 
 })(jQuery);

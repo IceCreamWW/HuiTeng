@@ -1,4 +1,5 @@
 from django.db import models
+from separatedvaluesfield.models import SeparatedValuesField
 
 
 class Notifications(models.Model):
@@ -6,10 +7,16 @@ class Notifications(models.Model):
     pub_date = models.DateTimeField('date published')
     expiration = models.DateTimeField('date outdated')
 
+    class Meta:
+        ordering = ['-pub_date', '-expiration']
+
 
 class Certifications(models.Model):
     name = models.CharField(max_length=20)
-    path = models.CharField(max_length=256)
-    visibility = models.BooleanField()
+    cover_img_path = models.CharField(max_length=256)
+    all_img_paths = SeparatedValuesField(max_length=512, token=',')
+    visible = models.BooleanField()
 
-
+    @property
+    def html_name(self):
+        return self.name.replace('-', '\n')

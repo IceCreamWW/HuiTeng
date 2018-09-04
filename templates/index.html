@@ -891,7 +891,7 @@
                 <div class="col-md-4 col-sm-4 col-xs-12 design">
                     <div class="single-awesome-project">
                         <div class="awesome-img">
-                            <a href="#"><img src="{% static "img/portfolio/3.jpg" %}" alt=""/></a>
+                            <a href="#"><img src="{% static "img/certifications/CE认证.jpg" %}" alt=""/></a>
                             <div class="add-actions text-center">
                                 <div class="project-dec">
                                     <a class="venobox" data-gall="myGallery" href="{% static "img/portfolio/3.jpg" %}">
@@ -1092,125 +1092,49 @@
                 </div>
             </div>
             <div class="row" id="certifications-row">
+{#                <div class="col-md-4 col-sm-4 col-xs-12 design">#}
+{#                    <div class="single-awesome-project">#}
+{#                        <div class="awesome-img">#}
+{#                            <a href="#"><img src="{% static "img/certifications/CE认证.jpg" %}" alt=""/></a>#}
+{#                            <div class="add-actions text-center">#}
+{#                                <div class="project-dec">#}
+{#                                    <a class="venobox" data-gall="myGallery" href="{% static "img/portfolio/3.jpg" %}">#}
+{#                                        <h4>Beautiful Nature</h4>#}
+{#                                        <span>Web Design</span>#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+                {% for certification in certifications %}
                 <!-- Start Left Blog -->
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-certification">
-                        <div class="single-certification-img">
+                <div class="col-md-3 col-sm-3 col-xs-12" style="outline: none;">
+                    <div class="single-awesome-project single-certification">
+                        {% with certification.path as image %}
+                        <div class="awesome-img single-certification-img">
                             <a href="#">
-                                <img src="{% static "img/certifications/CE认证.jpg" %}" alt="">
+                                <img src="{% static image %}" alt="">
                             </a>
+                            <div class="add-actions text-center">
+                                <div class="project-dec certification-cover">
+                                    <a class="venobox" data-gall="myGallery" href="{% static image %}">
+                                        <h4>浏览证书</h4>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="certification-text">
                             <h5>
-                                <a href="#">CE认证</a>
+                                <a href="#">{{ certification.html_name|linebreaksbr}}</a>
                             </h5>
                         </div>
+                        {% endwith %}
                     </div>
                     <!-- Start single certification -->
                 </div>
                 <!-- End Left Blog-->
-                <!-- Start Left Blog -->
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-certification">
-                        <div class="single-certification-img">
-                            <a href="#">
-                                <img src="{% static "img/certifications/CE认证.jpg" %}" alt="">
-                            </a>
-                        </div>
-                        <div class="certification-text">
-                            <h5>
-                                <a href="#">CE认证</a>
-                            </h5>
-                        </div>
-                    </div>
-                    <!-- Start single certification -->
-                </div>
-                <!-- End Left Blog-->
-                <!-- Start Left Blog -->
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-certification">
-                        <div class="single-certification-img">
-                            <a href="#">
-                                <img src="{% static "img/certifications/CE认证.jpg" %}" alt="">
-                            </a>
-                        </div>
-                        <div class="certification-text">
-                            <h5>
-                                <a href="#">CE认证</a>
-                            </h5>
-                        </div>
-                    </div>
-                    <!-- Start single certification -->
-                </div>
-                <!-- End Left Blog-->
-                <!-- Start Left Blog -->
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-certification">
-                        <div class="single-certification-img">
-                            <a href="#">
-                                <img src="{% static "img/certifications/CE认证.jpg" %}" alt="">
-                            </a>
-                        </div>
-                        <div class="certification-text">
-                            <h5>
-                                <a href="#">CE认证<br/>test</a>
-                            </h5>
-                        </div>
-                    </div>
-                    <!-- Start single certification -->
-                </div>
-                <!-- End Left Blog-->
-                <!-- Start Left Blog -->
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-certification">
-                        <div class="single-certification-img">
-                            <a href="#">
-                                <img src="{% static "img/certifications/CE认证.jpg" %}" alt="">
-                            </a>
-                        </div>
-                        <div class="certification-text">
-                            <h5>
-                                <a href="#">CE认证<br/>test</a>
-                            </h5>
-                        </div>
-                    </div>
-                    <!-- Start single certification -->
-                </div>
-                <!-- End Left Blog-->
-                <!-- Start Left Blog -->
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-certification">
-                        <div class="single-certification-img">
-                            <a href="#">
-                                <img src="{% static "img/certifications/CE认证.jpg" %}" alt="">
-                            </a>
-                        </div>
-                        <div class="certification-text">
-                            <h5>
-                                <a href="#">CE认证<br/>test</a>
-                            </h5>
-                        </div>
-                    </div>
-                    <!-- Start single certification -->
-                </div>
-                <!-- End Left Blog-->
-                <!-- Start Left Blog -->
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="single-certification">
-                        <div class="single-certification-img">
-                            <a href="#">
-                                <img src="{% static "img/certifications/CE认证.jpg" %}" alt="">
-                            </a>
-                        </div>
-                        <div class="certification-text">
-                            <h5>
-                                <a href="#">CE认证<br/>test</a>
-                            </h5>
-                        </div>
-                    </div>
-                    <!-- Start single certification -->
-                </div>
-                <!-- End Left Blog-->
+                {% endfor %}
             </div>
         </div>
     </div>

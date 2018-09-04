@@ -1174,6 +1174,7 @@ div#preloader {
 
 .project-dec h4 {
     margin-bottom: 5px;
+    transition: color 200ms;
 }
 
 .project-dec h4:hover {
@@ -1472,7 +1473,8 @@ div#preloader {
 
 .certification-text h5 {
     color: #444;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 10px;
     text-align: center;
     font: 20px/30px microsoft yahei;
     font-weight: bold;
@@ -2480,7 +2482,7 @@ span.email-notes {
     border: 3px solid rgba(0,0,0,0.5);
 }
 .slick-dots li.slick-active button:hover {
-    border: 3px solid rgba(0,0,0,0.5);
+    border: 3px solid rgba(0,0,0,0.7);
 }
 .slick-dots li button:hover {
     border: 3px solid rgba(0,0,0,0.2);
@@ -2496,3 +2498,16 @@ span.email-notes {
     transition: border 500ms;
 }
 /*End Certification Slick Dots*/
+
+/*Begin Certification Cover*/
+.certification-cover h4
+{
+    margin: 65% 10%;
+    border: 3px solid;
+    padding: 10px 15px;
+}
+.certification-cover a
+{
+    height: auto;
+}
+/*End Certification Cover*/

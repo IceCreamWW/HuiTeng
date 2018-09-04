@@ -1,8 +1,9 @@
 from django.shortcuts import render
-# Create your views here.
+from index.models import *
 
 
 def index(request):
-    context = {}
-    context['certifications'] = 0
-    return render(request, 'index.html')
+    context = {
+        'certifications': Certifications.objects.filter(visible=True)
+    }
+    return render(request, 'index.html', context)

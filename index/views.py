@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from index.models import *
-
 from django.http import HttpResponse
 
 

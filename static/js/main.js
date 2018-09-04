@@ -209,17 +209,19 @@
         });
     }
 
+    var slides_per_div = 4
+
     /*certificates slide*/
     $("#certificates-row").slick({
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: slides_per_div,
+        slidesToScroll: slides_per_div,
         dots: true,
         arrows: true,
         infinite: false,
         lazyLoad: 'ondemand'
     });
 
-    if ($('.single-certificate').length <= 4)
+    if ($('.single-certificate').length <= slides_per_div)
         $('#certificates-row .slick-dots').hide();
 
 

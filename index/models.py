@@ -23,4 +23,4 @@ class Certificates(models.Model):
 
     @property
     def description_name(self):
-        return self.name.replace('-', ':')
+        return self.name.replace('-', ': ')

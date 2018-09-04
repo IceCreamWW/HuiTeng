@@ -2416,7 +2416,7 @@ span.email-notes {
     box-sizing: border-box;
     display: block;
     position: absolute;
-    margin-top: 12%;
+    top: 45%;
     z-index: 1;
     font-size: 0;
     background: transparent;
@@ -2428,7 +2428,6 @@ span.email-notes {
     border-radius: 100%;
     transition: all .2s linear;
 }
-
 #certificates-row button.slick-arrow:before,
 #certificates-row button.slick-arrow:after
 {
@@ -2458,6 +2457,11 @@ span.email-notes {
 #certificates-row button.slick-arrow:active:after, #certificates-row button.slick-arrow:active:before {
   background: #111;
 }
+.slick-disabled
+{
+    visibility: hidden;
+}
+
 /*End Certification Arrows*/
 
 /* Begin Certification Slick Dot*/

@@ -1167,6 +1167,7 @@ div#preloader {
 }
 
 .project-dec a {
+    text-decoration: none;
     display: block;
     height: 100%;
     width: 100%;
@@ -1461,17 +1462,17 @@ div#preloader {
 /*  13.Certification Area
 /*--------------------------------*/
 
-.certification-area {
+.certificate-area {
     height: auto;
     width: 100%;
 }
 
-.certification-text h5 a {
+.certificate-text h5 a {
     color: #444;
     text-decoration: none;
 }
 
-.certification-text h5 {
+.certificate-text h5 {
     color: #444;
     margin-bottom: 25px;
     margin-top: 10px;
@@ -1480,13 +1481,13 @@ div#preloader {
     font-weight: bold;
 }
 
-.certification-btn {
+.certificate-btn {
     border-bottom: 1px dotted #444;
     color: #444;
     text-decoration: none;
 }
 
-.certification-btn {
+.certificate-btn {
     border-bottom: 1px dotted #444;
     color: #444;
     display: inline-block;
@@ -1495,11 +1496,11 @@ div#preloader {
     text-decoration: none;
 }
 
-.certification-btn {
+.certificate-btn {
     position: relative;
 }
 
-.certification-btn::after {
+.certificate-btn::after {
     content: "\f178";
     font-family: fontawesome;
     position: absolute;
@@ -1508,52 +1509,52 @@ div#preloader {
     transition: all 0.3s ease 0s;
 }
 
-.certification-btn:hover::after {
+.certificate-btn:hover::after {
     right: -30px;
 }
 
-.certification-btn:hover {
+.certificate-btn:hover {
     color: #333;
     text-decoration: none;
 }
 
-.certification_meta span.date_type i {
+.certificate_meta span.date_type i {
     margin-left: 5px;
 }
 
-.certification-meta span.comments-type {
+.certificate-meta span.comments-type {
     margin-left: 5px;
 }
 
-.certification-meta span i {
+.certificate-meta span i {
     padding-right: 10px;
 }
 
-.certification-content .certification-meta {
+.certificate-content .certificate-meta {
     border-bottom: 1px dotted #333;
 }
 
-.certification-meta {
+.certificate-meta {
     border-bottom: 1px dotted #fff;
     padding: 10px 0;
 }
 
-.comments-type > a, .date-type, .certification-meta span.comments-type {
+.comments-type > a, .date-type, .certificate-meta span.comments-type {
     color: #333;
     letter-spacing: 1px;
     margin-right: 5px;
 }
 
-.certification-meta .comments-type i {
+.certificate-meta .comments-type i {
     padding-right: 0 !important;
 }
 
-.certification-content-right .comments-type > a, .certification-content-right .date-type, .certification-content-right .certification-meta span.comments-type, .certification-content-right .certification-text p {
+.certificate-content-right .comments-type > a, .certificate-content-right .date-type, .certificate-content-right .certificate-meta span.comments-type, .certificate-content-right .certificate-text p {
     color: #fff;
     letter-spacing: 1px;
 }
 
-.single-certification .ready-btn {
+.single-certificate .ready-btn {
     border: 1px solid #444;
     border-radius: 30px;
     color: #444;
@@ -1568,7 +1569,7 @@ div#preloader {
     transition: all 0.4s ease 0s;
 }
 
-.single-certification .ready-btn:hover {
+.single-certificate .ready-btn:hover {
     border: 1px solid #3EC1D5;
     color: #fff;
 }
@@ -1935,7 +1936,7 @@ div#preloader {
     position: relative;
 }
 
-.certification-page .banner-box {
+.certificate-page .banner-box {
     margin-bottom: 40px;
 }
 
@@ -1962,7 +1963,7 @@ div#preloader {
     color: #3ec1d5;
 }
 
-.left-certification h4 {
+.left-certificate h4 {
     border-bottom: 1px solid #ddd;
     color: #444;
     font-size: 17px;
@@ -1972,22 +1973,22 @@ div#preloader {
     text-transform: uppercase;
 }
 
-.left-certification {
+.left-certificate {
     background: #f9f9f9 none repeat scroll 0 0;
     margin-bottom: 30px;
     overflow: hidden;
     padding-bottom: 20px;
 }
 
-.left-certification li {
+.left-certificate li {
     border-bottom: 1px solid #ddd;
     display: block;
 }
 
-.left-certification ul li a:hover {
+.left-certificate ul li a:hover {
 }
 
-.left-certification ul li a {
+.left-certificate ul li a {
     color: #444;
     display: block;
     font-size: 14px;
@@ -2038,11 +2039,11 @@ div#preloader {
     width: 65%;
 }
 
-.pst-content p a:hover, .left-certification ul li a:hover {
+.pst-content p a:hover, .left-certificate ul li a:hover {
     color: #3EC1D5;
 }
 
-.certification-page .single-certification {
+.certificate-page .single-certificate {
     margin-bottom: 40px;
 }
 
@@ -2055,23 +2056,23 @@ div#preloader {
     color: #fff;
 }
 
-.certification-tags {
+.certificate-tags {
     padding: 1px 0;
 }
 
-.left-certification li:last-child {
+.left-certificate li:last-child {
     border-bottom: 0;
 }
 
-.popular-tag.left-certification ul li a:hover {
+.popular-tag.left-certificate ul li a:hover {
     color: #fff;
 }
 
-.popular-tag.left-side-tags.left-certification ul {
+.popular-tag.left-side-tags.left-certificate ul {
     padding: 0 10px;
 }
 
-.certification-1 .banner-box {
+.certificate-1 .banner-box {
     margin-bottom: 30px;
 }
 
@@ -2185,12 +2186,12 @@ div#preloader {
     border: 1px solid #3EC1D5;
 }
 
-.single-certification .author-avatar {
+.single-certificate .author-avatar {
     float: left;
     margin-right: 10px;
 }
 
-.single-certification .author-description h2 {
+.single-certificate .author-description h2 {
     font-size: 18px;
     margin: 0;
     padding: 0 0 5px;
@@ -2344,7 +2345,7 @@ span.email-notes {
     background: #3EC1D5;
 }
 
-.single-certification .certification-pagination {
+.single-certificate .certificate-pagination {
     border-top: 1px solid #e5e5e5;
     margin: 0;
     padding-top: 30px;
@@ -2362,7 +2363,7 @@ span.email-notes {
 /*
     Modifications
 */
-#certifications-row
+#certificates-row
 {
     margin-left: 50px;
     margin-right: 50px;
@@ -2370,47 +2371,47 @@ span.email-notes {
 }
 
 /* For Slick Dots */
-#certifications
+#certificates
 {
     position: relative;
 }
 
 /* Begin Certification Arrows */
-#certifications-row button.slick-prev.slick-arrow
+#certificates-row button.slick-prev.slick-arrow
 {
     left: 5%;
 }
 
-#certifications-row button.slick-prev.slick-arrow:before,
-#certifications-row button.slick-prev.slick-arrow:after
+#certificates-row button.slick-prev.slick-arrow:before,
+#certificates-row button.slick-prev.slick-arrow:after
 {
   left: 45%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-#certifications-row button.slick-prev.slick-arrow:after
+#certificates-row button.slick-prev.slick-arrow:after
 {
     left: 45%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-#certifications-row button.slick-next.slick-arrow
+#certificates-row button.slick-next.slick-arrow
 {
     right: 5%;
 }
 
-#certifications-row button.slick-next.slick-arrow:before,
-#certifications-row button.slick-next.slick-arrow:after
+#certificates-row button.slick-next.slick-arrow:before,
+#certificates-row button.slick-next.slick-arrow:after
 {
     left: 55%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
-#certifications-row button.slick-next.slick-arrow:after
+#certificates-row button.slick-next.slick-arrow:after
 {
     left: 55%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-#certifications-row button.slick-arrow
+#certificates-row button.slick-arrow
 {
     box-sizing: border-box;
     display: block;
@@ -2428,8 +2429,8 @@ span.email-notes {
     transition: all .2s linear;
 }
 
-#certifications-row button.slick-arrow:before,
-#certifications-row button.slick-arrow:after
+#certificates-row button.slick-arrow:before,
+#certificates-row button.slick-arrow:after
 {
     content: "";
     position: absolute;
@@ -2440,21 +2441,21 @@ span.email-notes {
     z-index: 2;
     transition: all .2s linear;
 }
-#certifications-row button.slick-arrow:after
+#certificates-row button.slick-arrow:after
 {
     z-index: 3;
     top: 59%;
 }
-#certifications-row button.slick-arrow:hover {
+#certificates-row button.slick-arrow:hover {
   border: solid 6px #777;
 }
-#certifications-row button.slick-arrow:hover:after, #certifications-row button.slick-arrow:hover:before {
+#certificates-row button.slick-arrow:hover:after, #certificates-row button.slick-arrow:hover:before {
   background: #777;
 }
-#certifications-row button.slick-arrow:active {
+#certificates-row button.slick-arrow:active {
   border: solid 6px #111;
 }
-#certifications-row button.slick-arrow:active:after, #certifications-row button.slick-arrow:active:before {
+#certificates-row button.slick-arrow:active:after, #certificates-row button.slick-arrow:active:before {
   background: #111;
 }
 /*End Certification Arrows*/
@@ -2500,14 +2501,56 @@ span.email-notes {
 /*End Certification Slick Dots*/
 
 /*Begin Certification Cover*/
-.certification-cover h4
+.certificate-cover.part-click h4
 {
     margin: 65% 10%;
     border: 3px solid;
     padding: 10px 15px;
 }
-.certification-cover a
+.certificate-cover.part-click a
 {
     height: auto;
 }
 /*End Certification Cover*/
+
+
+/*Begin venobox customization*/
+.vbox-next, .vbox-prev
+{
+    width: 60px;
+    height: 60px;
+}
+
+.vbox-next span, .vbox-prev span
+{
+    border: 10px solid transparent;
+    width: 40px;
+    height: 40px;
+}
+
+.vbox-prev
+{
+    left: 35px;
+}
+
+.vbox-next
+{
+    right: 35px;
+}
+
+.vbox-close
+{
+    font-size: 44px;
+    font-weight: 600;
+    padding: 0 0 0 15px;
+    line-height: 60px;
+    height: 70px;
+    width: 70px;
+    border-bottom-left-radius: 100%;
+}
+.vbox-close:hover
+{
+    font-weight: 700;
+}
+
+/*End venobox customization*/

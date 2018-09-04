@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>eBusiness Bootstrap Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    {% load static %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+          rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="{% static "lib/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="{% static "lib/nivo-slider/css/nivo-slider.css" %}" rel="stylesheet">
+    <link href="{% static "lib/owlcarousel/owl.carousel.css" %}" rel="stylesheet">
+    <link href="{% static "lib/owlcarousel/owl.transitions.css" %}" rel="stylesheet">
+    <link href="{% static "lib/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/animate/animate.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/venobox/venobox.css" %}" rel="stylesheet">
+
+    <!-- Nivo Slider Theme -->
+    <link href="{% static "css/nivo-slider-theme.css" %}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+
+    <!-- Responsive Stylesheet File -->
+    <link href="{% static "css/responsive.css" %}" rel="stylesheet">
+
+    <!-- slick -->
+    <link href=""{% static "plugins/slick/slick.css" %} rel="stylesheet">
+
+    <!--
+        HuiTeng Corporation modified the eBusiness template as official site
+        Please contact wangweidmail0809@gmail.com to delete
+        if there is any infringement -->
+
+    <!-- =======================================================
+      Theme Name: eBusiness
+      Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+      Author: BootstrapMade.com
+      License: https://bootstrapmade.com/license/
+    ======================================================= -->
+</head>
+
+<body>
+<!-- Start Blog Area -->
+<div id="certificates" class="certificate-area">
+    <div class="certificate-inner area-padding">
+        <div class="certificate-overly"></div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                        <h2>认证支持</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="certificates-row">
+                {% for img_path in certificate.all_img_paths %}
+                    <!-- Start Left Blog -->
+                    <div class="col-md-4 col-sm-4 col-xs-12" style="outline: none;">
+                        <div class="single-certificate">
+                            <div class="single-certificate-img">
+                                <a class="venobox " data-gall="myGallery" href="{% static img_path %}">
+                                    <img src="{% static img_path %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Start single certificate -->
+                    </div>
+                    <!-- End Left Blog-->
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog -->
+
+<!-- JavaScript Libraries -->
+<script src="{% static "lib/jquery/jquery.min.js" %}"></script>
+<script src="{% static "lib/bootstrap/js/bootstrap.min.js" %}"></script>
+<script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+<script src="{% static "lib/venobox/venobox.min.js" %}"></script>
+<script src="{% static "lib/knob/jquery.knob.js" %}"></script>
+<script src="{% static "lib/wow/wow.min.js" %}"></script>
+<script src="{% static "lib/parallax/parallax.js" %}"></script>
+<script src="{% static "lib/easing/easing.min.js" %}"></script>
+<script src="{% static "lib/nivo-slider/js/jquery.nivo.slider.js" %}" type="text/javascript"></script>
+<script src="{% static "lib/appear/jquery.appear.js" %}"></script>
+<script src="{% static "lib/isotope/isotope.pkgd.min.js" %}"></script>
+
+<!-- slick.js -->
+<script src="{% static "plugins/slick/slick.min.js" %}"></script>
+
+<script src="{% static "js/certificate.js" %}"></script>
+</body>
+
+</html>

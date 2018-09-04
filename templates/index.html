@@ -101,7 +101,7 @@
                                     <a class="page-scroll" href="#portfolio">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a class="page-scroll" href="#certifications">认证支持</a>
+                                    <a class="page-scroll" href="#certificates">认证支持</a>
                                 </li>
                                 <li>
                                     <a class="page-scroll" href="#contact">联系我们</a>
@@ -891,7 +891,7 @@
                 <div class="col-md-4 col-sm-4 col-xs-12 design">
                     <div class="single-awesome-project">
                         <div class="awesome-img">
-                            <a href="#"><img src="{% static "img/certifications/CE认证.jpg" %}" alt=""/></a>
+                            <a href="#"><img src="{% static "img/certificates/CE认证.jpg" %}" alt=""/></a>
                             <div class="add-actions text-center">
                                 <div class="project-dec">
                                     <a class="venobox" data-gall="myGallery" href="{% static "img/portfolio/3.jpg" %}">
@@ -1080,9 +1080,9 @@
 </div>
 <!-- End Testimonials -->
 <!-- Start Blog Area -->
-<div id="certifications" class="certification-area">
-    <div class="certification-inner area-padding">
-        <div class="certification-overly"></div>
+<div id="certificates" class="certificate-area">
+    <div class="certificate-inner area-padding">
+        <div class="certificate-overly"></div>
         <div class="container ">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -1091,11 +1091,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row" id="certifications-row">
+            <div class="row" id="certificates-row">
 {#                <div class="col-md-4 col-sm-4 col-xs-12 design">#}
 {#                    <div class="single-awesome-project">#}
 {#                        <div class="awesome-img">#}
-{#                            <a href="#"><img src="{% static "img/certifications/CE认证.jpg" %}" alt=""/></a>#}
+{#                            <a href="#"><img src="{% static "img/certificates/CE认证.jpg" %}" alt=""/></a>#}
 {#                            <div class="add-actions text-center">#}
 {#                                <div class="project-dec">#}
 {#                                    <a class="venobox" data-gall="myGallery" href="{% static "img/portfolio/3.jpg" %}">#}
@@ -1107,31 +1107,32 @@
 {#                        </div>#}
 {#                    </div>#}
 {#                </div>#}
-                {% for certification in certifications %}
+                {% for certificate in certificates %}
                 <!-- Start Left Blog -->
                 <div class="col-md-3 col-sm-3 col-xs-12" style="outline: none;">
-                    <div class="single-awesome-project single-certification">
-                        {% with certification.path as image %}
-                        <div class="awesome-img single-certification-img">
+                    <div class="single-awesome-project single-certificate">
+                        {% with certificate.cover_img_path as image %}
+                        <div class="awesome-img single-certificate-img">
                             <a href="#">
-                                <img src="{% static image %}" alt="">
+                                <img data-lazy="{% static image %}" alt="">
                             </a>
                             <div class="add-actions text-center">
-                                <div class="project-dec certification-cover">
-                                    <a class="venobox" data-gall="myGallery" href="{% static image %}">
+                                <div class="project-dec certificate-cover part-click">
+{#                                    <a class="venobox" data-gall="myGallery" href="{% url "certificate" certificate_id=certificate.id %}" target="_blank">#}
+                                    <a href="{% url "certificate" certificate_id=certificate.id %}" target="_blank">
                                         <h4>浏览证书</h4>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="certification-text">
+                        <div class="certificate-text">
                             <h5>
-                                <a href="#">{{ certification.html_name|linebreaksbr}}</a>
+                                <a href="#">{{ certificate.html_name|linebreaksbr}}</a>
                             </h5>
                         </div>
                         {% endwith %}
                     </div>
-                    <!-- Start single certification -->
+                    <!-- Start single certificate -->
                 </div>
                 <!-- End Left Blog-->
                 {% endfor %}

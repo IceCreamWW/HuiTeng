@@ -11,7 +11,7 @@ class Notifications(models.Model):
         ordering = ['-pub_date', '-expiration']
 
 
-class Certifications(models.Model):
+class Certificates(models.Model):
     name = models.CharField(max_length=20)
     cover_img_path = models.CharField(max_length=256)
     all_img_paths = SeparatedValuesField(max_length=512, token=',')
@@ -20,3 +20,7 @@ class Certifications(models.Model):
     @property
     def html_name(self):
         return self.name.replace('-', '\n')
+
+    @property
+    def description_name(self):
+        return self.name.replace('-', ':')

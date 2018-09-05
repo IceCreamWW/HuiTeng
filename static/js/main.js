@@ -103,14 +103,6 @@
         return false;
     });
 
-    /*----------------------------
-     Parallax
-    ------------------------------ */
-    var well_lax = $('.wellcome-area');
-    well_lax.parallax("50%", 0.4);
-    var well_text = $('.wellcome-text');
-    well_text.parallax("50%", 0.6);
-
     /*--------------------------
      collapse
     ---------------------------- */

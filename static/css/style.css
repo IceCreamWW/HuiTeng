@@ -234,7 +234,7 @@ div#preloader {
 }
 
 .section-headline h2::after {
-    border: 1px solid #333;
+    border: 1px solid;
     bottom: -20px;
     content: "";
     left: 0;
@@ -1627,7 +1627,7 @@ div#preloader {
 .contact-area {
     height: auto;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.83);
 }
 
 .contact-content {
@@ -2743,3 +2743,27 @@ img.product-image
     background: #111;
 }
 /* End Certification Arrows */
+
+a.ready-btn
+{
+    letter-spacing: 4px;
+}
+
+#contact p.contact-text
+{
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#contact .single-icon
+{
+    margin-top: 10px;
+}
+
+#contact .single-icon i
+{
+    color: white;
+    border-color: white;
+}
+

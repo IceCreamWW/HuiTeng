@@ -209,9 +209,18 @@
         });
     }
 
-    var slides_per_div = 4
 
     /*certificates slide*/
+    $("#products-row").slick({
+        rows:2,
+        dots: true,
+        arrows: true,
+        infinite: false,
+        lazyLoad: 'ondemand'
+    });
+
+    /*certificates slide*/
+    var slides_per_div = 4;
     $("#certificates-row").slick({
         slidesToShow: slides_per_div,
         slidesToScroll: slides_per_div,
@@ -222,7 +231,10 @@
     });
 
     if ($('.single-certificate').length <= slides_per_div)
+    {
+        alert('hidding dots')
         $('#certificates-row .slick-dots').hide();
+    }
 
 
 })(jQuery);

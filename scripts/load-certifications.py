@@ -22,8 +22,8 @@ certifications = [
 if __name__ == '__main__':
     import django
     django.setup()
-    from index.models import Certifications
+    from index.models import Certificates
     for c in certifications:
-        certification = Certifications(name=c[0], cover_img_path=c[1], all_img_paths=c[2], visible=c[3])
+        certification = Certificates(name=c[0], cover_img_path=c[1], all_img_paths=c[2], visible=c[3])
         certification.save()
 

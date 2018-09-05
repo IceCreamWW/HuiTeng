@@ -212,7 +212,7 @@ div#preloader {
 }
 
 .area-padding {
-    padding: 70px 0px 80px;
+    padding: 50px 0px 80px;
 }
 
 .area-padding-2 {
@@ -230,6 +230,7 @@ div#preloader {
     margin-bottom: 50px;
     position: relative;
     text-transform: capitalize;
+    letter-spacing: 6px;
 }
 
 .section-headline h2::after {
@@ -2363,12 +2364,6 @@ span.email-notes {
 /*
     Modifications
 */
-#certificates-row
-{
-    margin-left: 50px;
-    margin-right: 50px;
-    overflow: hidden;
-}
 
 /* For Slick Dots */
 #certificates
@@ -2376,10 +2371,23 @@ span.email-notes {
     position: relative;
 }
 
+
+/* leave space for certificate arrows */
+#certificates-row
+{
+    margin: 0 5%;
+}
+/* clear margin bottom for paginations */
+
+#certificates-row .single-awesome-project
+{
+    margin-bottom: 0;
+}
+
 /* Begin Certification Arrows */
 #certificates-row button.slick-prev.slick-arrow
 {
-    left: 5%;
+    left: -7%;
 }
 
 #certificates-row button.slick-prev.slick-arrow:before,
@@ -2396,7 +2404,7 @@ span.email-notes {
 
 #certificates-row button.slick-next.slick-arrow
 {
-    right: 5%;
+    right: -6%;
 }
 
 #certificates-row button.slick-next.slick-arrow:before,
@@ -2416,7 +2424,7 @@ span.email-notes {
     box-sizing: border-box;
     display: block;
     position: absolute;
-    top: 45%;
+    top: 35%;
     z-index: 1;
     font-size: 0;
     background: transparent;
@@ -2467,7 +2475,6 @@ span.email-notes {
 /* Begin Certification Slick Dot*/
 .slick-dots {
     position: absolute;
-    top: 85%;
     width: 100%;
     left: 0;
     padding: 0;
@@ -2558,3 +2565,181 @@ span.email-notes {
 }
 
 /*End venobox customization*/
+
+/*Begin product list*/
+
+img.product-image
+{
+    width: 30%;
+    float: left;
+}
+#products-row{
+    list-style:none;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 0;
+}
+
+#products-row li.single-product{
+    display: block;
+    box-sizing:border-box;
+    border-radius: 3px;
+    text-align: left;
+    border:1px solid #cfcfcf;
+    box-shadow: 2px 3px 1px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff;
+
+    font: normal 13px sans-serif;
+    margin: 10px 0;
+    transition: box-shadow 200ms;
+}
+#products-row li.single-product:hover
+{
+    box-shadow: 4px 6px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+#products-row li.single-product div{
+    float: left;
+    box-sizing: border-box;
+
+    max-width: 65%;
+    padding: 25px 30px 20px 30px;
+}
+
+
+#products-row li.single-product div h2{
+    font-size: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 500;
+    margin:0;
+}
+
+#products-row li.single-product div h2 a{
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+
+#products-row li.single-product div p{
+    line-height: 20px;
+    color: #5d5d5d;
+
+    margin: 20px 0;
+}
+
+#products-row li.single-product a.read-more{
+    background-color: #87bcd7;
+    cursor: pointer;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 2px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+@media (max-width: 600px){
+
+    #products-row{
+        max-width: 350px;
+    }
+
+    #products-row li.single-product{
+        max-width: 325px;
+    }
+
+    #products-row li.single-product > a{
+        float: none;
+        width: 100%;
+    }
+
+    #products-row li.single-product div{
+        float: none;
+        padding: 30px;
+    }
+
+}
+
+/*End product list*/
+
+/* Begin Certification Arrows */
+#products-row button.slick-prev.slick-arrow
+{
+    left: -14%;
+}
+
+#products-row button.slick-prev.slick-arrow:before,
+#products-row button.slick-prev.slick-arrow:after
+{
+    left: 45%;
+    transform: translate(-50%, -75%) rotate(-60deg);
+}
+#products-row button.slick-prev.slick-arrow:after
+{
+    left: 45%;
+    transform: translate(-50%, 75%) rotate(60deg);
+}
+
+#products-row button.slick-next.slick-arrow
+{
+    right: -14%;
+}
+
+#products-row button.slick-next.slick-arrow:before,
+#products-row button.slick-next.slick-arrow:after
+{
+    left: 55%;
+    transform: translate(-50%, -75%) rotate(60deg);
+}
+#products-row button.slick-next.slick-arrow:after
+{
+    left: 55%;
+    transform: translate(-50%, 75%) rotate(-60deg);
+}
+
+#products-row button.slick-arrow
+{
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    font-size: 0;
+    background: transparent;
+    outline: none;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: transparent;
+    transition: all .2s linear;
+}
+#products-row button.slick-arrow:before,
+#products-row button.slick-arrow:after
+{
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 10%;
+    top: 41%;
+    background: #999;
+    z-index: 2;
+    transition: all .2s linear;
+}
+#products-row button.slick-arrow:after
+{
+    z-index: 3;
+    top: 59%;
+}
+#products-row button.slick-arrow:hover:after, #products-row button.slick-arrow:hover:before {
+    background: #777;
+}
+#products-row button.slick-arrow:active:after, #products-row button.slick-arrow:active:before {
+    background: #111;
+}
+/* End Certification Arrows */

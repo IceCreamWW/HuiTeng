@@ -15,3 +15,7 @@ def certificate(request, certificate_id):
         'certificate': Certificates.objects.get(visible=True, id=certificate_id)
     }
     return render(request, 'certificate.html', context)
+
+
+def test(request):
+    return render(request, 'test.html')

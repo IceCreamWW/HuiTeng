@@ -224,7 +224,6 @@
 
     if ($('.single-certificate').length <= slides_per_div)
     {
-        alert('hidding dots')
         $('#certificates-row .slick-dots').hide();
     }
 
